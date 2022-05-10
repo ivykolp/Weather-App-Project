@@ -86,3 +86,8 @@ ul {
 li {
   list-style: none;
 }
+
+#author {
+  text-align: center;
+  margin: 0;
+}
