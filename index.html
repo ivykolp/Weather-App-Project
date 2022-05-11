@@ -29,72 +29,73 @@
   </head>
   <body>
     <div class="container">
-      <form id="city-form">
-        <input
-          type="text"
-          class="city-zip"
-          placeholder="Search City or Zip"
-          id="city-search"
-        />
-        <button type="submit" class="btn btn-success button">
-          <i class="fa-solid fa-magnifying-glass magnifying-glass"></i>
-        </button>
-      </form>
+      <div class="weather-app">
+        <form id="city-form">
+          <input
+            type="text"
+            class="city-zip"
+            placeholder="Search City or Zip"
+            id="city-search"
+          />
+          <button type="submit" class="btn btn-success button">
+            <i class="fa-solid fa-magnifying-glass magnifying-glass"></i>
+          </button>
+        </form>
 
-      <h1 id="city"></h1>
-      <div class="row city">
-        <ul dayTime>
-          <span class="weekday-today" id="current-day"></span>
-          <span class="time" id="current-time"></span>
-          <div class="weatherDescription" id="description"></div>
+        <h1 id="city"></h1>
+        <div class="row city">
+          <ul dayTime>
+            <span class="weekday-today" id="current-day"></span>
+            <span class="time" id="current-time"></span>
+            <div class="weatherDescription" id="description"></div>
+          </ul>
+
+          <h2>
+            <span class="temperature" id="temperature"></span>
+            <span class="units">°C </span>
+          </h2>
+        </div>
+
+        <ul>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km/h</li>
         </ul>
 
-        <h2>
-          <span class="temperature" id="temperature"></span>
-          <span class="units">°C </span>
-        </h2>
-      </div>
+        <div class="row days">
+          <div class="col">F</div>
+          <div class="col">Sa</div>
+          <div class="col">Su</div>
+          <div class="col">M</div>
+          <div class="col">Tu</div>
+        </div>
 
-      <ul>
-        <li>Humidity: <span id="humidity"></span>%</li>
-        <li>Wind: <span id="wind"></span> km/h</li>
-      </ul>
+        <div class="row">
+          <div class="col">
+            <i class="fa-solid fa-cloud-sun-rain weather-icon"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-cloud weather-icon"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-snowflake weather-icon"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-sun weather-icon"></i>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-cloud-sun weather-icon"></i>
+          </div>
+        </div>
 
-      <div class="row days">
-        <div class="col">F</div>
-        <div class="col">Sa</div>
-        <div class="col">Su</div>
-        <div class="col">M</div>
-        <div class="col">Tu</div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <i class="fa-solid fa-cloud-sun-rain weather-icon"></i>
+        <div class="row daily-temp">
+          <div class="col">55°F</div>
+          <div class="col">40°F</div>
+          <div class="col">32°F</div>
+          <div class="col">70°F</div>
+          <div class="col">65°F</div>
         </div>
-        <div class="col">
-          <i class="fa-solid fa-cloud weather-icon"></i>
-        </div>
-        <div class="col">
-          <i class="fa-solid fa-snowflake weather-icon"></i>
-        </div>
-        <div class="col">
-          <i class="fa-solid fa-sun weather-icon"></i>
-        </div>
-        <div class="col">
-          <i class="fa-solid fa-cloud-sun weather-icon"></i>
-        </div>
-      </div>
-
-      <div class="row daily-temp">
-        <div class="col">55°F</div>
-        <div class="col">40°F</div>
-        <div class="col">32°F</div>
-        <div class="col">70°F</div>
-        <div class="col">65°F</div>
       </div>
     </div>
-
     <p id="author">
       <a
         href="https://github.com/ivykolp/Weather-App-Project"
