@@ -65,6 +65,11 @@ h1 {
   font-size: 40px;
   color: #3bb4c1;
 }
+.weather-temperature a {
+  color: #696464;
+  text-decoration: none;
+  cursor: default;
+}
 
 .weather-temperature .active {
   color: #3bb4c1;
