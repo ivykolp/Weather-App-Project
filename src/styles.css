@@ -40,7 +40,7 @@ h1 {
 
 .units {
   font-size: 15px;
-  vertical-align: super;
+  vertical-align: text-top;
 }
 
 .weekday-time {
@@ -64,7 +64,7 @@ h1 {
   color: #3bb4c1;
 }
 
-#weatherDescription {
+#description {
   font-weight: bold;
   font-size: 23px;
   font-style: italic;
