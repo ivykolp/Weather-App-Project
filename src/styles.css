@@ -38,16 +38,11 @@ h1 {
   color: #3bb4c1;
 }
 
-#celsius,
-#fahrenheit {
-  text-decoration: none;
-  color: #696464;
-}
-
-.weather-temperature .units {
+.units {
   font-size: 15px;
   vertical-align: text-top;
   text-decoration: none;
+  color: #696464;
 }
 
 .weekday-time {
@@ -74,6 +69,7 @@ h1 {
 .weather-temperature .active {
   color: #3bb4c1;
   cursor: default;
+  text-decoration: none;
 }
 
 .weather-temperature .active:hover {
