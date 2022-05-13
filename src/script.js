@@ -25,14 +25,18 @@ function formatDate(timestamp) {
 }
 
 function displayWeatherCondition(response) {
-  console.log(response.data);
+  let dateElement = document.querySelector("#current-day");
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  let dateElement = document.querySelector("#current-day");
-  console.log(dateElement);
+
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/04d@2x.png`
+  );
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(

@@ -49,12 +49,22 @@ h1 {
   text-align: left;
 }
 
+.icon {
+  max-width: 70px;
+  background-color: transparent;
+}
+
+.iconTemp {
+  max-width: 400px;
+  float: inline-end;
+}
+
 .sun {
   font-size: 40px;
   color: #3bb4c1;
 }
 
-.weatherDescription {
+#weatherDescription {
   font-weight: bold;
   font-size: 23px;
   font-style: italic;

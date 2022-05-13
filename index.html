@@ -47,16 +47,26 @@
           <ul dayTime>
             <span class="weekday-today" id="current-day"> Last updated </span>
             <span class="time" id="current-time"></span>
-            <div class="weatherDescription" id="description"></div>
           </ul>
 
           <h2>
-            <span class="temperature" id="temperature"></span>
-            <span class="units">°C </span>
+           <span>
+                <img 
+                src= "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/150/original/sun.png?1652398867"
+                alt="Sunny"
+                id="icon"
+                class="icon"
+            </img>
+        </span>
+              <span>
+                <span class="temperature" id="temperature"></span>
+                <span class="units">°C </span>
+              </span>
           </h2>
         </div>
 
         <ul>
+          <li><span id="weatherDescription"> Clear </span></li>
           <li>Humidity: <span id="humidity"></span>%</li>
           <li>Wind: <span id="wind"></span> km/h</li>
         </ul>
