@@ -24,6 +24,33 @@ function formatDate(timestamp) {
   return `Last updated as of ${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-2">
+              <div class="weather-forecast-date"> ${day} </div>
+              <img 
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt=""
+              wid="36"
+              />
+              <div class="weather-forecast-temperature">
+                  <span class="weather-forecast-tempearture-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+          </div>`;
+  });
+
+  forecastElementHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeatherCondition(response) {
   let dateElement = document.querySelector("#current-day");
   let iconElement = document.querySelector("#icon");
@@ -82,6 +109,7 @@ function displayFahrenheitTemperature(event) {
 }
 
 search("New York");
+displayForecast();
 
 let fahrenheitTemperature = null;
 

@@ -78,6 +78,9 @@ h1 {
   color: #3bb4c1;
   font-weight: bold;
   font-size: larger;
+  text-align: center;
+  opacity: 0.6;
+  margin: 20px 10px 10px;
 }
 
 .weather-forecast-temperature {
