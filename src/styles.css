@@ -38,6 +38,10 @@ h1 {
   color: #3bb4c1;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .units {
   font-size: 15px;
   vertical-align: text-top;
