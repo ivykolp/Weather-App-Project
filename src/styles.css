@@ -54,26 +54,9 @@ li:first-letter {
   float: inline-end;
 }
 
-.weather-temperature a {
-  color: #696464;
-  text-decoration: none;
-  cursor: default;
-}
-
-.weather-temperature .active {
-  color: #3bb4c1;
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
 #description {
   font-weight: bold;
   font-size: 23px;
-  font-style: italic;
   color: #696464;
   text-align: center;
 }
